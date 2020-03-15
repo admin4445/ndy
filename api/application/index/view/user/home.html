@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <body>
+         <form action="{:url('Index/User/addinfo')}" method="POST">
+
+           用户名：    <input type="text" name="UserName"><br />
+             密码：    <input type="password" name="UserPwd"><br />
+            公司名称： <input type="text" name="Corporate_Name"><br />
+            公司地点： <input type="text" name="Corporate_Address"><br />
+            公司电话： <input type="text" name="Corporate_Tel"><br />
+             负责人：  <input type="text" name="Corporate_Boss"><br />
+                       <button type="submit" >注册</button>
+
+            
+        </form>
+        
+            <table>
+       
+                {volist name="data" id="data"}
+              <tr>
+                  <td>{$data.User_Id}</td>
+                  <td>{$data.UserName}</td>
+                  <td>{$data.UserPwd}</td>
+                  <td><a href="{:url('Index/User/FindUser')}?id={$data.User_Id}">修改</a></td>
+                  <td><a href="{:url('Index/User/DeleteUser')}?id={$data.User_Id}">删除</a></td>
+                  <td><a href="{:url('Index/User/displayUser')}">添加</a></td>
+    
+              </tr>
+              {/volist}
+          </table>
+        
+          
+    
+  </body>
+</html>

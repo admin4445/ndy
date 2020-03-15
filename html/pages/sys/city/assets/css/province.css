@@ -1,0 +1,28 @@
+/*当前页面布局样式开始////////////////////////////////////////////////////////////////////////////////////////////////////*/
+body{font-size:14px;font-family: Arial, Helvetica, sans-serif;color:#333;background:#dfffe3;}
+body a{text-decoration:none;color:#333;}
+/*当前页面布局样式结束////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*用户数据表样式开始///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.content table{margin:10px;border-collapse: collapse;background:#fff;font-size:14px;line-height:30px;}
+.content table tr th,td{border:1px solid #ccc;text-align:center;}
+.content nav{margin:20px 0px 0px 20px;color:#333;}
+
+
+/*城市查询*/
+.outer{text-align:left;text-indent:10px;}
+.outer select{height:25px;width:200px;text-indent:5px;margin-top:2px;}
+.addprovinceBtn{background:#34abc4;color:#fff;display:block;width:50px;border-radius:3px;cursor: pointer;}
+.addCityBtn{background:#34abc4;color:#fff;display:inline-block;width: 50px;border-radius:3px;cursor: pointer;}
+.delProvinceBtn{background:#ff5722;color:#fff;display:inline-block;width:45px;border-radius:3px;font-size:14px;cursor: pointer;}
+/*表格头部开始*/
+table.tbContent{width:1000px;}
+/*表格头部结束*/
+/*删除弹出框样式开始*/
+.delProvinceBox{display:none;background:rgb(0,0,0,0.2);width: 100%;}
+.delProvinceDiv{padding:10px 0px;margin:50px auto;width:300px;height:150px;background-color:white;border-radius:3px;}
+.delProvinceDiv img{width:80px;height:66px;margin-left: 110px;}
+.delProvinceDiv p{padding:10 0px;margin:0px;margin-left:108px;font-size:20px;color: #e91245;}
+.delProvinceConfirmBtn{background-color: #eb6940;float:left;padding:8px 16px;border-radius:3px;position: relative;right:5px;color: white;cursor: pointer;}
+.delProvinceCancelBtn{background-color: #3da018;float:left;padding:8px 16px;border-radius:3px;position: relative;left:5px;color: white; margin-left:78px;margin-right:22px;cursor: pointer;}

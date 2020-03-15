@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>云雀智旅主页</title>
+        <link rel="stylesheet" href="/assets/css/common.css" />
+        <link rel="stylesheet" href="/assets/lib/layui/2.4.5/layui/css/layui.css" />  
+        <link rel="stylesheet" href="assets/css/user.css" />
+    </head>
+    <body>
+        <div class="container" id="app">
+            <dx-component-header></dx-component-header>
+            <div class="bodyer">
+               <dx-component-sidepage ref="sidepageop"></dx-component-sidepage>
+                <div class="content">
+                    <dx-component-navbar ref="navbarop"></dx-component-navbar>
+                    
+                    <dx-component-line-toolbar></dx-component-line-toolbar>
+                    <dx-component-line-datatable></dx-component-line-datatable>
+                </div>
+            </div>
+            <dx-component-line-op ref="orderop"></dx-component-line-op>
+        </div>
+        <script type="text/javascript" src="/assets/lib/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/lib/vue.min.js"></script>
+        <script type="text/javascript" src="/assets/lib/layui/2.4.5/layui/layui.js"></script>
+        <script type="text/javascript" src="/assets/component/layout/header.js"></script>
+        <script type="text/javascript" src="/assets/component/layout/sidePage.js"></script>
+        <script type="text/javascript" src="/assets/component/layout/navBar.js"></script>
+        <script type="text/javascript" src="/assets/component/layout/footer.js"></script>
+        <script type="text/javascript" src="/assets/js/api.js"></script>
+        <script type="text/javascript" src="assets/components/toolBar.js"></script>
+        <script type="text/javascript" src="assets/components/dataTable.js"></script>
+        <script type="text/javascript" src="assets/components/lineOp.js"></script>
+        <script type="text/javascript" src="assets/js/line.js"></script>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>云雀智旅主页</title>
+    <meta class="utf-8">
+        <link rel="stylesheet" href="../../assets/css/common.css" />
+        <link rel="stylesheet" href="assets/css/country.css">
+  </head>
+  <body>
+    <div style="width:100%" id="app">
+        <dx-component-header></dx-component-header>
+            <dx-component-sidepage></dx-component-sidepage>
+            <dx-component-navbar></dx-component-navbar>
+
+            <table style="width:1000px;">  
+                <tr>
+                    <td width="100"><b style="cursor: pointer;" >城市查询：</b></td>
+                    <td width="200">
+                        <div class="outer">
+                            <select name="country" class="country">
+                                <option v-for="option in options" v-bind:value="option"></option>
+                            </select>
+                        </div> 
+                    </td>
+                    <td>
+                        <span class="addCountryBtn" @click="addCountry">添加</span>
+                    </td>
+                </tr>
+            </table>
+            <!--城市查询结束-->
+            <div>
+                <table  class="tbContent">
+                    <tr>
+                        <th class="Id">ID</th>
+                        <th class="number"><span>区号</span></th>
+                        <th class="country"><span>国家</span></th>
+                        <th class="action"><span>操作</span></th>
+                    </tr>
+                    <tr v-for="item in countryList">
+                        <td><span v-text="item.Country_Id"></span></td>
+                        <td><span v-text="item.Country_Number"></span></td>
+                        <td><span v-text="item.Country_Name"></span></td>
+                        <td width="120"><span class="addProincialBtn" @click="gotoPrvinceList(item.Country_Id)">省份</span> | <span class="delCountryBtn"  @click="delCountryBox(item.Country_Id)">删除</span></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="delCountryBox">
+                <div class="delCountryDiv">
+                    <div>
+                        <img src="../../assets/imgs/alert.jpg">
+                        <P>确定删除？</P>
+                    </div>
+                    <div class="delBtnBox">
+                        <div class="delCountryCancelBtn" @click="delCountryCancelBtn">取消</div>
+                        <div class="delCountryConfirmBtn" @click="delCountryConfirmBtn"> 确定</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <script type="text/javascript" src="../../assets/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../../assets/lib/vue.min.js"></script>
+    <script type="text/javascript" src="../../assets/component/layout/navBar.js"></script>
+    <script type="text/javascript" src="../../assets/js/api.js"></script>
+    <script type="text/javascript" src="assets/js/country.js"></script>
+  </body>
+</html>

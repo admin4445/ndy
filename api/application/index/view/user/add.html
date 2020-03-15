@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type='text/javascript' src='/static/js/jquery-3.3.1.js'></script>
+   
+  </head>
+  <body>
+       
+     <form method="POST" action="{:url('Index/User/AddUser')}">
+       用户名：  <input type="text" name="UserName" ><br/>
+       密码：  <input type="password" name="UserPwd"  /><br/>
+        姓名： <input type="text" name="Name"  /><br/>
+        邮箱： <input type="email" name="Email" /><br/>
+        地址： <input type="text" name="Address"  /><br/>
+        电话： <input type="text" name="Tel"  /><br/>
+        QQ：  <input type="text" name="Qq" ><br/>
+         微信：<input type="text" name="Wechat"  /><br/>
+        身份证： <input type="text" name="IDcard" /><br/>
+        职业名称： <input type="text" name="profession" ><br/>
+
+        性别 <select name="Sex">
+            <option value ="1" >男</option>
+            <option value ="0">女</option>
+        
+           </select><br/>
+        年龄 <input type="text" name="Age"  /><br/>
+        爱好： <input type="text" name="Hobby" /><br/>
+        公司 <input type="text" name="Corporate_Id"><br/>
+         <button type="submit">添加</button>
+         
+     </form>
+     <table>
+            {volist name="cc" id="cc"}
+            <tr>
+                <td>{$cc.ScenicsSpot_Id}</td>
+                <td>{$cc.City_Id}</td>
+                <td>{$cc.ScenicsSpot_Name}</td>
+                <td>{$cc.ScenicSpot_Introduction}</td>
+                <td>{$cc.ScenicSpots_Pictures}</td>
+                <td><a href="{:url('Index/user/ScenicsSpotFind')}?id={$cc.ScenicsSpot_Id}">修改</a></td>
+                <td><a href="{:url('Index/user/ScenicsSpotDelete')}?id={$cc.ScenicsSpot_Id}">删除</a></td>
+                <td><a href="">添加</a></td>
+       
+            </tr>
+            {/volist}
+           </table>
+           {$cc.ScenicSpots_Pictures}
+           
+            <img src="/static/img/{$cc.ScenicSpots_Pictures}" alt="" style="width:200px;height:150px;">
+            <img src="/static/img/{$cc.ScenicSpots_Pictures}" alt="" style="width:200px;height:150px;">
+             <img src="/static/img/{$cc.ScenicSpots_Pictures}" alt="" style="width:200px;height:150px;">
+
+         <div>
+              <h1></h1>
+              <img src="" alt="">
+              <p></p> 
+         </div>
+  </body>
+</html>

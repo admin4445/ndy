@@ -1,0 +1,36 @@
+var dxComponentSpotDataTable ={
+    methods:{
+        parentEdtSpot:function(id){this.$parent.edtSpot(id);},
+        parentDelSpot:function(id){this.$parent.delSpot(id);}
+    },
+    template:'<table class="layui-table" lay-even lay-size="sm" style="margin:0px;">'
+    +'<colgroup>'
+    +'<col width="50">'
+    +'<col width="120">'
+    +'<col width="120">'
+    +'<col>'
+    +'<col width="180">'
+    +'</colgroup>'
+    +'<thead>'
+    +'    <th>ID</th>'
+    +'    <th>景点类型</th>'
+    +'    <th>景点名称</th>'
+    +'    <th>景点介绍</th>'
+    +'    <th>操作</th>'
+    +'</thead>'
+    +'<tbody>'   
+    +'    <tr v-for="item in this.$parent.spot">'
+    +'        <td v-text="item.ScenicSpot_Id"></td>'
+    +'        <td v-text="item.ScenicSpot_Type"></td>'
+    +'        <td v-text="item.ScenicSpot_Name"></td>'
+    +'        <td v-text="item.ScenicSpot_Introduction"></td>'
+    +'        <td>'
+    +'            <div class="layui-btn-group">'
+    +'                <button class="layui-btn layui-btn-sm" @click="parentEdtSpot(item.ScenicSpot_Id)"><i class="layui-icon">&#xe642;</i> 编辑</button>'
+    +'                <button class="layui-btn layui-btn-sm  layui-btn-danger" @click="parentDelSpot(item.ScenicSpot_Id)"><i class="layui-icon">&#xe640;</i> 删除</button>'
+    +'            </div>'
+    +'        </td>'
+    +'    </tr>'
+    +'</tbody>'
+    +'</table>'
+}

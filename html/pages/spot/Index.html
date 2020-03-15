@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>云雀智旅5.0</title>
+        <link rel="stylesheet" href="/assets/css/common.css"/>
+        <link rel="stylesheet" href="assets/css/spot.css">
+        <link rel="stylesheet" href="/assets/lib/layui/2.4.5/layui/css/layui.css" /> 
+    </head>      
+    <body>
+        <div class="container" id="app">
+            <dx-component-header></dx-component-header>
+            <div class="bodyer">
+                <dx-component-sidepage ref="sidepageop"></dx-component-sidepage>
+                <div class="content">
+                    <dx-component-navbar ref="navbarop"></dx-component-navbar>
+                    <!--数据列表开始-->
+                    <div class="contenter">
+                        <dx-component-spot-toolbar></dx-component-spot-toolbar>
+                        <!--添加按钮结束-->
+                        <!--数据列表开始-->
+                        <dx-component-spot-datatable></dx-component-spot-datatable>
+                        <!--数据列表结束-->
+                    <!--列表组件开始-->
+                    <dx-component-spot-op ref="spotop"></dx-component-spot-op>
+                    <!--列表结束-->
+                </div>
+            </div>
+        </div>
+        </div>
+        <script type="text/javascript" src="/assets/lib/jquery.min.js"></script>
+        <script type="text/javascript" src="/assets/lib/vue.min.js"></script>
+        <script type="text/javascript" src="/assets/lib/layui/2.4.5/layui/layui.js"></script>
+        <script type="text/javascript" src="/assets/component/layout/header.js"></script>
+        <script type="text/javascript" src="/assets/component/layout/sidePage.js"></script>
+        <script type="text/javascript" src="/assets/component/layout/navBar.js"></script>
+        <script type="text/javascript" src="assets/js/components/toolbar.js"></script>
+        <script type="text/javascript" src="assets/js/components/dataTable.js"></script>
+        <script type="text/javascript" src="assets/js/components/spotOp.js"></script>
+        <script type="text/javascript" src="/assets/js/api.js"></script>
+        <script type="text/javascript" src="assets/js/spot.js"></script>         
+    </body>
+</html>

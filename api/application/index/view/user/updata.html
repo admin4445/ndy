@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type='text/javascript' src='/static/js/jquery-3.3.1.js'></script>
+   
+  </head>
+  <body>
+       
+     <form method="POST" action="{:url('Index/User/UpdateUser')}">
+         <input type="hidden" name="id" value="{$User_Id}">
+         <input type="text" name="UserName" value={$UserName} />
+         <input type="password" name="UserPwd" value={$UserPwd} />
+         <button type="submit">修改</button>
+         
+     </form>
+       
+     
+  </body>
+</html>

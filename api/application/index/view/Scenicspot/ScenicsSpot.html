@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type='text/javascript' src='/static/js/jquery-3.3.1.js'></script>
+   
+  </head>
+  <body>
+        <form action="{:url('index/Scenicspot/ScenicsSpotUpdate')}?id={$ScenicsSpot_Id}" enctype="multipart/form-data" method="post">
+            城市：<input type="text" placeholder="城市id" name="City_Id" value=" {$City_Id}"><br />
+            景点名称：<input type='text' name="ScenicsSpot_Name" value=" {$ScenicsSpot_Name}"><br />
+            景点图片： <input type="text" name="ScenicSpots_Pictures" value=" {$ScenicSpots_Pictures}"/> <br> 
+            景点介绍：<input type="text" name="ScenicSpot_Introduction"value=" {$ScenicSpot_Introduction}"><br />
+            <input type="submit" value="修改" /> 
+           
+
+         
+         </form> 
+        
+  </body>
+</html>

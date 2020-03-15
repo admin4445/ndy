@@ -1,0 +1,9 @@
+@charset "UTF-8";
+body{display:flex;justify-content:center;align-items:center;background:url("/assets/imgs/login_icon2.png"),-webkit-linear-gradient(left, #328947, #247cd5);}
+
+.reg-box{height:580px;background:rgba(0,0,0,0.3);}
+.reg-tit{width:450px;height:60px;text-align:center;background:rgba(0,0,0,0.4);}
+.layui-form{width:450px;height:500px;}
+.layui-form ul{padding-top:20px;padding-left:20px;}
+.layui-form ul li{padding:10px;color:#fff;}
+.layui-form ul li .input1{width:310px;height:35px;margin-left:5px;text-indent:5px;border-radius:5px;border:none;}

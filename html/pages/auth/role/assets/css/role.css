@@ -1,0 +1,5 @@
+/*当前页面布局样式开始////////////////////////////////////////////////////////////////////////////////////////////////////*/
+body{font-size:14px;font-family: Arial, Helvetica, sans-serif;color:#333;}
+body a{text-decoration:none;color:#333;}
+.checkbox1{width: 18px;height: 18px;background-color: #fff;-webkit-appearance:none;border: 1px solid #c9c9c9;border-radius: 2px;outline: none;cursor: pointer;}
+.checkbox1:checked{background: url("../img/checkbox_icon1.jpg")no-repeat center;background-size: 140%;}
